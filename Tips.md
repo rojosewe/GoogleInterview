@@ -31,4 +31,39 @@
 * For a BFS, use a Queue Implementation.
 * For a DFS, use a PreOrder Traversal.
 
+## Concurrency
+ 
+ **Processes**: Isolated, no data sharing.
+ **Threads**: Its own call stack and memory cache but shared data.
+ 
+Performance gain (Amdahl's Law): f F is the percentage of the program which can not run in parallel and N is the number of processes, then the maximum performance gain is **1 / (F + ((1-F) / n))**.
+
+### Issues: 
+* **Visibility problems**: Data changed by one thread, another unaware.
+	* Liveness failure: Deadlock.
+	* Safety Failure: Use of incorrect data.
+
+### Solutions:
+* synchronized keyword.
+	* One thread per block of code.
+	* Synchronizing an object guarantees that no multiple threads can enter blocks of code guarded by this key.   
+	* Multiple keys can be used in the same class.
+	
+* volatile keyword.
+	* No local cache for the volatile variable. All changes will go to central memory immediately. Similar to this: synchronized(this){x=newValue;}
+	
+* Atomic operations: Operations performed within the same unit of work without interference of other threads.
+	* double and long variables are only atomic if declared as volatile.
+
+* Immutability: To make a class immutable:
+	* All fields are final.
+	* The class is declared as final.
+	* Private fields without setters. Internal changes have no effect outside of the class.
+	* If mutable values are passed from the outside, then a final copy must be maked to avoid changes through referenced values.
+	
+It is wise to use pools. For an example go to [a  ExecutorsExample](https://github.com/rojosewe/GoogleInterview/blob/master/src/ojleet/concurrency/ExecutorsExample.java)
+
+Callable<E> returns a Future<E>: Future<Long> f = callable.submit(); Long x = f.get().
+
+The fork-join framework allows to split a task and the rejoin it much in the same way map reduce does.
  
