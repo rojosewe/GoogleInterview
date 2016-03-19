@@ -61,7 +61,7 @@ Performance gain (Amdahl's Law): f F is the percentage of the program which can 
 	* Private fields without setters. Internal changes have no effect outside of the class.
 	* If mutable values are passed from the outside, then a final copy must be maked to avoid changes through referenced values.
 	
-It is wise to use pools. For an example go to [a  ExecutorsExample](https://github.com/rojosewe/GoogleInterview/blob/master/src/ojleet/concurrency/ExecutorsExample.java)
+It is wise to use pools. For an example go to [ExecutorsExample](https://github.com/rojosewe/GoogleInterview/blob/master/src/ojleet/concurrency/ExecutorsExample.java)
 
 Callable<E> returns a Future<E>: Future<Long> f = callable.submit(); Long x = f.get().
 
