@@ -10,16 +10,8 @@ public class TreeNode {
 	}
 
 	public String toString(){
-		String l = "";
-		if(left == null && right != null)
-			l = "*<-";
-		else if(left != null)
-			l = left.toString() + "<-";
-		String r = "";
-		if(right == null && left != null)
-			r = "->*";
-		else if(right != null)
-			r = "->" + right.toString();
-		return l + val + r; 
+		Codec c = new Codec(); 
+		return c.serialize(this); 
 	}
+
 }

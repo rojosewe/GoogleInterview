@@ -2,7 +2,6 @@ package oljeet.tree;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Traverse {
 
@@ -48,9 +47,12 @@ public class Traverse {
 		array.add(t.val);
 	}
 	
-	public static void main(String... args){
+	public static void main(String... args) throws Exception{
 		TreeNode convert = ArrayToTree.build();
-		System.out.println("Tree: " + convert);
+		Codec c = new Codec();
+		System.out.println("Tree: " + c.serialize(convert));
+		convert = c.deserialize(convert.toString());
+		System.out.println("Deserialized:" + convert);
 		System.out.println("InOrder: " + Traverse.inorder(convert));
 		System.out.println("PreOrder: " + Traverse.preorder(convert));
 		System.out.println("PostOrder: " + Traverse.postorder(convert));

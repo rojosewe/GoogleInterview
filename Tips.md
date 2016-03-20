@@ -31,6 +31,43 @@
 * For a BFS, use a Queue Implementation.
 * For a DFS, use a PreOrder Traversal.
 
+### Types of binary trees 
+
+* **Full** No node has only one child.
+	  a
+	 / \
+	b   c
+	   / \
+	  d   e
+* **Complete** All levels are completely filled except possibly the last.
+	  a
+	 / \
+	b   c
+   /   / \
+  f	  d   e
+* **Perfect** All internal nodes have two children, all leaves are the same level. 
+	  a
+	 / \
+	b   c
+   / \ / \
+  f	  gd  e
+  
+* **Balanced** Hash the minimum possible depth. 
+	  a
+	 / \
+	b   c
+   / \ 
+  f	  g
+  
+ * **Degenerate** All nodes have one child. 
+	  a
+	 / 
+	c
+     \ 
+      g
+       \
+        h
+
 ## Concurrency
  
  **Processes**: Isolated, no data sharing.
@@ -61,7 +98,7 @@ Performance gain (Amdahl's Law): f F is the percentage of the program which can 
 	* Private fields without setters. Internal changes have no effect outside of the class.
 	* If mutable values are passed from the outside, then a final copy must be maked to avoid changes through referenced values.
 	
-It is wise to use pools. For an example go to [ExecutorsExample](https://github.com/rojosewe/GoogleInterview/blob/master/src/ojleet/concurrency/ExecutorsExample.java)
+It is wise to use pools. For an example go to [ExecutorsExample](https://github.com/rojosewe/GoogleInterview/blob/master/src/oljeet/concurrency/ExecutorsExample.java)
 
 Callable<E> returns a Future<E>: Future<Long> f = callable.submit(); Long x = f.get().
 
