@@ -106,7 +106,8 @@ Callable<E> returns a Future<E>: Future<Long> f = callable.submit(); Long x = f.
 The fork-join framework allows to split a task and the rejoin it much in the same way map reduce does.
  
 ## Testing
-
+**Remember** Who? What? Range and bounds? Failure conditions? 
+* Replicability: Version, OS compatibility, hardware,  
 * Testing systems:
 	* Testing levels: 
 		* Unit testing.
