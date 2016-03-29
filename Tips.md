@@ -1,4 +1,4 @@
-# Tips
+	# Tips
 
 * Creating a new class or implementing an interface might make it 10x easier to solve that question.
 * Check for all the data structures:
@@ -13,7 +13,11 @@
 		* HashSet If you need no arbitrary access and no iteration.
 		* LinkedHashSet allows you to access the values in order.
 		* TreeSet If you need no maintain the items ordered.
-* Testing for nulls, negative numbers, empty lists/arrays, out of rangers.   
+* Testing for nulls, negative numbers, empty lists/arrays, out of rangers.
+* If you know the size of something, you can store it in an array.
+* If you know the range maybe you can store it into a long/int.
+* If you want to compare characters, it might help to know if they're ASCII or another encoding.
+* When calculating probabilities is important to check the probabilities of all the possible events.
 
 ## Binary Trees
 
