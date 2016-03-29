@@ -13,7 +13,12 @@
 		* HashSet If you need no arbitrary access and no iteration.
 		* LinkedHashSet allows you to access the values in order.
 		* TreeSet If you need no maintain the items ordered.
-* Testing for nulls, negative numbers, empty lists/arrays, out of rangers.   
+* Testing for nulls, negative numbers, empty lists/arrays, out of rangers.
+
+## Remember:
+* To know the order of magnitude of 10: Math.round(Math.log(order)/Math.log(10))
+* Probability the sum of all probabilities = 1
+* Probability of two things ocurring: p(1) * p(2)
 
 ## Sorting:
 * Insertion: next object to proper poisition. Good O(n) when almost sorted
