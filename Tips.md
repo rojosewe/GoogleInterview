@@ -15,6 +15,14 @@
 		* TreeSet If you need no maintain the items ordered.
 * Testing for nulls, negative numbers, empty lists/arrays, out of rangers.   
 
+## Sorting:
+* Insertion: next object to proper poisition. Good O(n) when almost sorted
+* Bubble: next position with proper object with continuous swapping. Good O(n) when almost sorted: Lower overhead / 2n passes.
+* Selection: Next position with proper object, check all array. Allways O(n2). Few swaps, good when swap expensive.
+* Merge: Recursive by half then sort as merging. Predictable. O(nlgn) time, O(n) space for arrays, O(lgn) for linked. 
+* Heap: Using heap order. Study it. Not very stable or predictable. O(nlgn)
+* Quick: Use pivot recursively. O(n2) when reversed, otherwise O(nlgn). Not stable
+
 ## Binary Trees
 
 * Array is formed as:
