@@ -23,6 +23,13 @@
 * To know the order of magnitude of 10: Math.round(Math.log(order)/Math.log(10))
 * Probability the sum of all probabilities = 1
 * Probability of two things ocurring: p(1) * p(2)
+* Conditional Prob: P(E1|E2) = p(E1 and E2)/P(E1)
+* Counting: n distinct objects taken r at a time n!/(n! - r!)
+	* How many different ways can \displaystyle{3}3 red, \displaystyle{4}4 yellow and \displaystyle{2}2 blue bulbs be arranged in a string of Christmas tree lights with \displaystyle{9}9 sockets?
+	* n! / n1! x n2! n3!
+* The number of ways (or combinations) in which r objects can be selected from a set of n objects, where repetition is not allowed, is denoted by: n! / r!(n - r)!
+	* In our example above, the number of different sets of \displaystyle{4}4 letters which can be chosen from the alphabet is
+	* 26! / 4! * (26 - 4)!
 
 ## Sorting:
 * Insertion: next object to proper poisition. Good O(n) when almost sorted

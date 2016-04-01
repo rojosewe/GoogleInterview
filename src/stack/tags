@@ -1,0 +1,16 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+Animal	/home/sensefields/development/watchdogsWorkspace/GoogleInterview/src/stack/AnimalStack.java	/^public class Cat() implements Animal{$/;"	c	language:Java
+Animal	/home/sensefields/development/watchdogsWorkspace/GoogleInterview/src/stack/AnimalStack.java	/^public class Dog() implements Animal{$/;"	c	language:Java
+Animal	/home/sensefields/development/watchdogsWorkspace/GoogleInterview/src/stack/AnimalStack.java	/^public interface Animal{$/;"	i	language:Java
+AnimalStack	/home/sensefields/development/watchdogsWorkspace/GoogleInterview/src/stack/AnimalStack.java	/^public class AnimalStack{$/;"	c	language:Java
+arrivalTime	/home/sensefields/development/watchdogsWorkspace/GoogleInterview/src/stack/AnimalStack.java	/^		Date arrivalTime;$/;"	f	language:Java	class:Animal
+arrivalTime	/home/sensefields/development/watchdogsWorkspace/GoogleInterview/src/stack/AnimalStack.java	/^		Date arrivalTime;$/;"	f	language:Java	class:Animal
+cats	/home/sensefields/development/watchdogsWorkspace/GoogleInterview/src/stack/AnimalStack.java	/^	Queue<Cat> cats = new LinkedList<Cat>();$/;"	f	language:Java	class:AnimalStack
+dequeueAny	/home/sensefields/development/watchdogsWorkspace/GoogleInterview/src/stack/AnimalStack.java	/^	public Animal dequeueAny(){$/;"	m	language:Java	class:AnimalStack
+dequeueCat	/home/sensefields/development/watchdogsWorkspace/GoogleInterview/src/stack/AnimalStack.java	/^	public Cat dequeueCat()  {$/;"	m	language:Java	class:AnimalStack
+dequeueDog	/home/sensefields/development/watchdogsWorkspace/GoogleInterview/src/stack/AnimalStack.java	/^	public Dog dequeueDog()  {$/;"	m	language:Java	class:AnimalStack
+dogs	/home/sensefields/development/watchdogsWorkspace/GoogleInterview/src/stack/AnimalStack.java	/^	Queue<Dog> dogs  = new LinkedList<Dog>();$/;"	f	language:Java	class:AnimalStack
+enqueue	/home/sensefields/development/watchdogsWorkspace/GoogleInterview/src/stack/AnimalStack.java	/^	public void enqueue(Animal animal){$/;"	m	language:Java	class:AnimalStack
+getArrivalTime	/home/sensefields/development/watchdogsWorkspace/GoogleInterview/src/stack/AnimalStack.java	/^			public Date getArrivalTime(){$/;"	m	language:Java	class:Animal
+getArrivalTime	/home/sensefields/development/watchdogsWorkspace/GoogleInterview/src/stack/AnimalStack.java	/^		Date getArrivalTime();$/;"	m	language:Java	interface:Animal
+getArrivalTime	/home/sensefields/development/watchdogsWorkspace/GoogleInterview/src/stack/AnimalStack.java	/^		public Date getArrivalTime(){$/;"	m	language:Java	class:Animal
