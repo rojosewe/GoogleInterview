@@ -8,6 +8,12 @@ public class TreeNode {
 	TreeNode(int x){ 
 		val = x; 
 	}
+	
+	TreeNode(TreeNode left, int x, TreeNode right){ 
+		val = x; 
+		this.left = left;
+		this.right = right;
+	}
 
 	public String toString(){
 		Codec c = new Codec(); 
