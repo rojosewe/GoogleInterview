@@ -1,8 +1,8 @@
 package search;
 
-public class BinarySearch{
+public class uNIQUEcOUNTER{
 
-	public BinarySearch(){
+	public uNIQUEcOUNTER(){
 		super();
 	}
 
