@@ -1,12 +1,11 @@
 package string;
 
-import java.util.Arrays;
 
 public class Trie {
 	private TrieNode root;
 
 	public Trie() {
-		root = new TrieNode(' ');
+		root = new TrieNode();
 	}
 
 	// Inserts a word into the trie.
@@ -23,7 +22,8 @@ public class Trie {
 				current.children[c] = child;
 			}
 			current = child;
-		}	
+		}
+		current.fullWord = true;
 	}
 
 	// Returns if the word is in the trie.
@@ -44,7 +44,7 @@ public class Trie {
 			else
 				current = child;
 		}
-		return isEmpty(current.children);
+		return current.fullWord;
 	}
 
 	// Returns if there is any word in the trie
@@ -62,23 +62,22 @@ public class Trie {
 			else
 				current = child;
 		}
-		return !isEmpty(current.children);
-	}
-	
-	private boolean isEmpty(TrieNode[] array){
-		for(int i = 0; i < array.length; i++){
-			if(array[i] != null)
-				return false;
-		}
 		return true;
 	}
-
+	
 	class TrieNode {
 		// Initialize your data structure here.
 		char value;
+		boolean fullWord; 
 		TrieNode[] children;
+		
+		public TrieNode() {
+			this(' ');
+		}
+		
 		public TrieNode(char value) {
 			children = new TrieNode[26];
+			this.value = value;
 		}
 	}
 	
@@ -88,20 +87,38 @@ public class Trie {
 		return sb.toString();
 	}
 	
-	private String depPrint(StringBuilder sb, TrieNode node){
-		sb.append("[");
+	private void depPrint(StringBuilder sb, TrieNode node){
+		sb.append("[").append(node.value).append(":");
 		for(int i = 0; i < node.children.length; i ++){
 			if(node.children[i] != null)
-				sb.append(node.value).append("[").append(depPrint(sb, node.children[i])).append("\n");
+				depPrint(sb, node.children[i]);
 		}
 		sb.setLength(sb.length() - 1);
 		sb.append("]");
-		return sb.toString();
 		
 	}
 	
 	public static void main(String... args){
-		
+		Trie root = new Trie();
+//		for(int i = 0; i < 3; i++){
+//			root.insert(StringInput.build());
+//			System.out.println(root.toString());
+//		}
+//		System.out.println("Correct");
+//		System.out.println(root.search(StringInput.build()));
+////		System.out.println("not found");
+////		System.out.println(root.search(StringInput.build()));
+//		System.out.println("prefix");
+//		System.out.println(root.startsWith(StringInput.build()));
+////		System.out.println("notpre");
+////		System.out.println(root.startsWith(StringInput.build()));
+		root.insert("abc");
+		System.out.println(root.search("abc"));
+		System.out.println(root.search("ab"));
+		root.insert("ab");
+		System.out.println(root.search("ab"));
+		root.insert("ab");
+		System.out.println(root.search("ab"));
 	}
 }
 
