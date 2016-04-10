@@ -70,6 +70,9 @@ public class Test {
 		System.out.println(q.poll());
 	}
 	
+	public static void test9(String word){
+	}
+	
 	public static void main(String... args){
 		Test.test8();
 	}
