@@ -24,7 +24,6 @@ public class IntArray {
 				bs[i] = r.nextInt(m);
 			}
 		}
-		sc.close();
 		return bs;
 	}
 }
