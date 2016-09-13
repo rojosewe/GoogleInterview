@@ -1,5 +1,7 @@
 package crack.linkedlist;
 
+import oljeet.tree.Node;
+
 /**
  * 2.6
  * 	//A   b   c   d   e   f   g   h   c   d   e   f   g   h   c   d   e   f   g   h
@@ -9,11 +11,6 @@ package crack.linkedlist;
 
 public class LoopLinkedList {
 
-	public class Node{
-		int value;
-		Node next;
-	}
-	
 	public static void main(String... args){
 		
 	}

@@ -17,7 +17,8 @@ public class TreeNode {
 
 	public String toString(){
 		Codec c = new Codec(); 
-		return c.serialize(this); 
+//		return c.serialize(this);
+		return "";
 	}
 
 }
