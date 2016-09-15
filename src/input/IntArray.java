@@ -1,5 +1,6 @@
 package input;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -24,7 +25,7 @@ public class IntArray {
 				bs[i] = r.nextInt(m);
 			}
 		}
-		sc.close();
+		System.out.println(Arrays.toString(bs));
 		return bs;
 	}
 }
