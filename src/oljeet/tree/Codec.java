@@ -1,18 +1,18 @@
 package oljeet.tree;
 
-import java.util.StringTokenizer;
 
 public class Codec {
 
 	// Encodes a tree to a single string.
-    public String serialize(TreeNode root) {
-        if(root == null)
+    public String serialize(search.CountSmaller.TreeNode treeNode) {
+        if(treeNode == null)
             return null;
         StringBuilder sb = new StringBuilder();
 		sb.append('(')
-		.append(root.left == null?"":root.left.toString()).
-		append(',').append(root.val).append(',')
-		.append(root.right == null?"":root.right.toString()).
+		.append(treeNode.left == null?"":treeNode.left.toString()).
+		append(',').append(treeNode.value).append('[')
+		.append(treeNode.smaller).append(']').append(',')
+		.append(treeNode.right == null?"":treeNode.right.toString()).
 		append(')');
 		return sb.toString();   
     }

@@ -50,7 +50,7 @@ public class Traverse {
 	public static void main(String... args) throws Exception{
 		TreeNode convert = ArrayToTree.build();
 		Codec c = new Codec();
-		System.out.println("Tree: " + c.serialize(convert));
+//		System.out.println("Tree: " + c.serialize(convert));
 		convert = c.deserialize(convert.toString());
 		System.out.println("Deserialized:" + convert);
 		System.out.println("InOrder: " + Traverse.inorder(convert));

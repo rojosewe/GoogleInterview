@@ -9,6 +9,7 @@ public class IntegerOps {
 		int i1 = Int.build();
 		int i2 = Int.build();
 		System.out.println(i1 + ", " + i2);
+		System.out.println("negate "  + io.negate(i1));
 		System.out.println(io.substract(i1, i2));
 		System.out.println(io.multiply(i1, i2));
 		System.out.println(io.divide(i1, i2));
@@ -16,7 +17,7 @@ public class IntegerOps {
 	
 	public int negate(int i){
 		return -i;
-//		return i  ^= 1 << 32;
+//		return i  ^= 1 << 32;		
 	}
 	
 	public int substract(int i1, int i2){
